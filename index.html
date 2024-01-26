@@ -19,6 +19,108 @@
 
     <title>Expertise cadre de Santé et infirmière - Formation et Accompagnement par Fatiha Milan</title>
     <link href="/assets/vendors/fontawesome/css/all.min.css" rel="stylesheet">
+    <style>
+        .turnup {
+            transform: rotateZ(180DEG);
+        }
+        
+        .services .lqd-counter-element {
+            font-family: var(--lqd-heading-font-family);
+        }
+
+        .services .accordion-item.active .accordion-expander {
+            color: #ffffff;
+            background-color: #000000;
+            border-color: #000000;
+        }
+
+        .services .accordion-title a {
+            border-color: #707070;
+        }
+
+        .services .accordion-item.active .accordion-title a {
+            border-color: transparent;
+        }
+
+        .services .lqd-counter-element {
+            font-size: 170px;
+        }
+
+        @media (min-width: 1199px) {
+            .services .lqd-counter-element {
+                font-size: 220px;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .services .module-col {
+                padding-inline-end: 45px;
+                padding-inline-start: 45px;
+            }
+
+            .services .module-title {
+                padding-inline-start: 20px;
+            }
+
+            .services .module-btn {
+                padding-inline-end: 20px;
+            }
+
+            .services .module-content {
+                padding-inline-end: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .services .module-title {
+                margin-bottom: 20px;
+            }
+
+            .services .module-btn {
+                padding-inline-start: 20px;
+            }
+
+            .services .module-col {
+                padding: 0 20px 30px 20px;
+            }
+
+            .services .accordion-title a {
+                font-size: 24px;
+                line-height: 1.1em;
+            }
+
+            .services .accordion-expander {
+                font-size: 20px;
+                width: 45px;
+                height: 45px;
+            }
+
+            .services span.ld-fh-element {
+                margin-bottom: 0;
+            }
+        }
+
+        /* ***** Section Flow ***** */
+        .section-flow {
+            min-height: 655px;
+        }
+
+        .section-flow .lqd-section-flow-panel-end {
+            padding: 13% 6%;
+        }
+
+        .section-flow .lqd-section-flow-panel-end .lqd-section-flow-item {
+            padding-top: 20%;
+            padding-bottom: 20%;
+        }
+
+        @media (max-width: 767px) {
+            .section-flow .lqd-section-flow-panel-end .lqd-section-flow-item {
+                padding-top: 45px;
+                padding-bottom: 45px;
+            }
+        }
+    </style>
 </head>
 <body class="lqd-cc-outer-hidden" data-lqd-cc="true" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="modern" data-mobile-nav-scheme="dark" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-secondary-bar="false" data-mobile-logo-alignment="default" data-overlay-onmobile="false">
     <div id="wrap">
@@ -47,13 +149,13 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="/">
                                             Mon expertise
                                             <sup class="link-sup">02</sup>
                                         </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a >
                                             Mon offre
                                             <sup class="link-sup">03</sup>
                                         </a>
@@ -115,14 +217,14 @@
                                                             </a>
                                                         </li>
                                                         <li class="mb-15 menu-item-has-children">
-                                                            <a class="flex leading-1/5em hover:text-primary">
+                                                            <a href="/" class="flex leading-1/5em hover:text-primary">
                                                                 Mon expertise
                                                                 <sup class="link-sup">02</sup>
                                                                 <span class="submenu-expander relative"></span>
                                                             </a>
                                                         </li>
                                                         <li class="mb-15">
-                                                            <a class="flex leading-1/5em hover:text-primary">
+                                                            <a  class="flex leading-1/5em hover:text-primary">
                                                                 Mon offre
                                                                 <sup class="link-sup">03</sup>
                                                             </a>
@@ -190,18 +292,18 @@
                                         </a>
                                     </li>
                                     <li class="my-10">
-                                        <a target="_blank" data-lqd-interactive-color="true">
-                                            Fb.
+                                        <a data-lqd-interactive-color="true">
+                                            <i class="fa-brands fa-facebook turnup"></i>
                                         </a>
                                     </li>
                                     <li class="my-10">
-                                        <a target="_blank" data-lqd-interactive-color="true">
-                                            Ig.
+                                        <a data-lqd-interactive-color="true">
+                                            <i class="fa-brands fa-linkedin turnup"></i>
                                         </a>
                                     </li>
                                     <li class="my-10">
-                                        <a target="_blank" data-lqd-interactive-color="true">
-                                            Tw.
+                                        <a data-lqd-interactive-color="true">
+                                            <i class="fa-brands fa-twitter turnup"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -258,13 +360,13 @@
                                 </a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a>
+                                <a href="/">
                                     Mon expertise
                                     <sup class="link-sup">02</sup>
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a >
                                     Mon offre
                                     <sup class="link-sup">03</sup>
                                 </a>
@@ -565,6 +667,51 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="lqd-section design-services pt-100 pb-40" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element, figure, .lqd-split-lines .lqd-lines .split-inner", "duration" : 1100 , "startDelay" : 200 , "delay" : 100 , "ease": "expo.out", "initValues": {"y": "80px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
+                    <div class="absolute top-0">
+                        <div class="ld-particles-container relative w-full">
+                            <div class="ld-particles-inner lqd-overlay flex pointer-events-none" id="lqd-particle-design-services" data-particles="true" data-particles-options='{"particles": {"number": {"value" : 5} , "color": {"value" : ["#604CFD", "#F85976", "#FDA44C", "#A2B2C9"]} , "shape": {"type" : ["circle"]} , "opacity": {"value" : 1} , "size": {"value" : 2} , "move": {"enable": true, "direction": "right", "random": true, "out_mode": "out"}} , "interactivity": {"detect_on": "window", "events": {"onhover": {"enable": true, "mode" : ["bubble"]}} , "modes": {"bubble": {"size" : 15}}} , "retina_detect": true}'></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="w-450 flex flex-col relative items-center max-w-full text-center mx-auto">
+                                <div class="ld-fancy-heading relative w-auto py-5 px-15 bg-gray rounded-100 animation-element">
+                                    <h6 class="ld-fh-element relative text-12 uppercase tracking-1 text-slate-500 m-0">
+                                        Mon offre
+                                    </h6>
+                                </div>
+                                <div class="ld-fancy-heading relative mask-text">
+                                    <h2 class="ld-fh-element relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-0/5em mt-0/25em" data-inview="true" data-transition-delay="true" data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}' data-split-text="true" data-split-options='{"type": "lines"}'>
+                                        Ce
+                                        <mark class="lqd-highlight">
+                                            <span class="lqd-highlight-txt">que</span>
+                                            <span class="bottom-0 left-0 lqd-highlight-inner bg-purple-200"></span>
+                                        </mark>
+                                        j'ai à offir
+                                    </h2>
+                                </div>
+                                <div class="absolute -top-5percent -left-10percent module-shape sm:left-0">
+                                    <div class="lqd-imggrp-single block relative">
+                                        <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                            <figure class="w-full relative">
+                                                <img width="67" height="73" src="./assets/images/demo/start-hub-4/services/Shape.svg" alt="shape">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ld-fancy-heading relative mask-text">
+                                    <p class="ld-fh-element relative lqd-split-lines text-17 leading-1/3em" data-split-text="true" data-split-options='{"type": "lines"}'> 
+                                        Formation d’équipe sur des thèmes du soin, connaissances de soi et positionnement professionnel, gestion du changement et du stress, techniques de management en situation de crise et/ou dans le cadre difficultés de fonctionnement d’équipe.<br>
+                                        Accompagnement individuel bienveillant et empathique vers une juste connaissance de soi pour s’inscrire dans un schéma de croissance personnelle. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col-12 h-60 hidden sm:block"></div>
+                        </div>
+                    </div>
+                </section>
                 
                 <section class="lqd-section expertise bg-no-repeat bg-cover bg-center py-130" id="expertise" style="background-image: url(/assets/img/bg-g.jpg);">
                     <div class="container">
@@ -668,101 +815,175 @@
                     </div>
                 </section>
                 
-                <section class="lqd-section about-accordion py-10" id="help" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":".col","duration":"1800","delay":"180","ease":"power4.out","direction":"forward","initValues":{"y":35,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":0},"animations":{"y":0,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":1}}'>
+                <section class="lqd-section services bg-white rounded-10 mb-90">
                     <div class="container">
                         <div class="row">
-                            <div class="col col-12">
-                                <div class="w-full relative flex flex-col flex-grow-1 pt-40 pb-10 mb-50 border-bottom border-black module-line">
-                                    <div class="container-fluid p-0">
-                                        <div class="row items-center">
-                                            <div class="col col-2">
-                                                <div class="w-30percent relative flex border-top border-black-50"></div>
-                                            </div>
-                                            <div class="col col-8">
-                                                <h6 class="ld-fh-element mb-0/5em text-12 uppercase tracking-0/01em font-normal text-black">
-                                                    A propos de moi
-                                                </h6>
-                                            </div>
-                                            <div class="col col-2 text-end sm:text-start">
-                                                <h6 class="ld-fh-element mb-0/5em text-12 font-normal"> 03</h6>
-                                            </div>
+                            <div class="col col-12 text-start" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "back.out", "direction": "backward", "initValues": {"x": "-100px", "opacity" : 0} , "animations": {"x": "0px", "opacity" : 1}}'>
+                                <div class="w-full flex flex-wrap justify-between items-center pt-35">
+                                    <div class="ld-fancy-heading relative lg:w-50percent sm:w-full module-title animation-element">
+                                        <h2 class="ld-fh-element text-28 m-0  inline-block relative">
+                                            Ma carrière professionnel
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center justify-end lg:w-50percent sm:w-full sm:justify-start module-btn">
+                                        <div class="ld-fancy-heading relative mr-10 py-5 px-15 mb-0 border-2 border-black rounded-100 animation-element">
+                                            <h5 class="ld-fh-element inline-block relative text-14 uppercase tracking-1 m-0">
+                                                Mon offre
+                                            </h5>
                                         </div>
+                                        <a  class="text-14 font-bold uppercase text-black rounded-100 btn btn-solid btn-custom-size btn-icon-block btn-icon-top w-30 h-30 bg-accent border-none p-0" target="_blank" rel="nofollow">
+                                            <span class="btn-icon w-1em">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10.625" height="10.625" viewBox="0 0 10.625 10.625">
+                                                    <path d="M-1.76-11.322H5.313V-4.25H3.885V-8.932L-4.316-.7l-1-1,8.2-8.234H-1.76Z" transform="translate(5.313 11.322)"></path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="divider w-full max-w-full mt-10 py-15">
+                                        <span class="w-full border-bottom border-black-50"></span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-12 col-md-6">
-                                <h2 class="ld-fh-element mb-0/4em text-58 leading-0/8em text-init">
-                                    Beyond conventional agencies.
-                                </h2>
-                                <p class="ld-fh-element mb-2em ml-40percent text-15 leading-1/3em text-black-70 md:ml-0">
-                                    We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly, achieve marketing goals, and look fantastic.
-                                </p>
-                            </div>
-                            <div class="col col-12 col-md-6" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1800","delay":"160","ease":"power4.out","direction":"forward","initValues":{"y":30,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":0},"animations":{"y":0,"transformOriginX":50,"transformOriginY":50,"transformOriginZ":"0px","opacity":1}}'>
-                                <div class="w-full relative flex flex-col flex-grow-1 transition-all pl-15percent pr-5percent lg:px-0">
-                                    <div class="accordion accordion-md mb-2em" id="accordion-services" role="tablist" aria-multiselectable="true">
-                                        <div class="accordion-item panel">
-                                            <div class="accordion-heading" role="tab" id="heading-lqd-item-1" data-id="lqd-item-1">
-                                                <h4 class="accordion-title text-17" data-bs-controls="lqd-item-1">
-                                                    <a class="border-bottom border-black pr-30" data-bs-toggle="collapse" data-bs-parent="#accordion-services" href="#lqd-item-1" aria-expanded="true" aria-controls="lqd-item-1">
-                                                        <span>Branding Strategy </span>
-                                                        <span class="accordion-expander absolute right-0 text-16 text-inherit text-black">
-                                                            <i class="lqd-icn-ess icon-ion-ios-add"></i>
-                                                            <i class="lqd-icn-ess icon-ion-ios-remove"></i>
-                                                        </span>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="lqd-item-1" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="heading-lqd-item-1" data-bs-parent="#accordion-services">
-                                                <div class="accordion-content">
-                                                    <div class="ld-fancy-heading">
-                                                        <p class="ld-fh-element mb-0 lqd-highlight-underline lqd-highlight-grow-left text-decoration-default text-16 leading-1/5em">
-                                                            We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly, achieve marketing goals, and look fantastic.
-                                                        </p>
+                            <div class="col col-12 pt-55 pb-70 px-10 module-col" data-custom-animations="true" data-ca-options='{"animationTarget": ".animation-element", "ease": "back.out", "direction": "backward", "initValues": {"y": "100px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
+                                <div class="accordion accordion-title-underlined accordion-sm animation-element" id="accordion-services" role="tablist" aria-multiselectable="true">
+                                    <div class="accordion-item panel active">
+                                        <div class="accordion-heading" role="tab" id="heading-item-one">
+                                            <h4 class="accordion-title font-normal">
+                                                <a class="collapsed" role="button" data-bs-toggle="collapse" href="#collapse-item-one" aria-expanded="true" aria-controls="collapse-item-one">
+                                                    <span class="accordion-title-txt">
+                                                        Infirmière depuis 
+                                                        <b>2003</b>
+                                                    </span>
+                                                    <span class="accordion-expander text-24 w-60 h-60 flex items-center justify-center p-0 border-2 rounded-full  border-lightgray flex-shrink-0">
+                                                        <i class="lqd-icn-ess icon-ion-ios-add"></i>
+                                                        <i class="lqd-icn-ess icon-ion-ios-remove"></i>
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-item-one" class="accordion-collapse collapse show" data-bs-parent="#accordion-services" role="tabpanel" aria-labelledby="heading-item-one">
+                                            <div class="accordion-content py-1em">
+                                                <div class="flex flex-wrap items-end">
+                                                    <div class="w-40percent flex flex-wrap align-content-end items-end gap-0 pr-150 sm:w-full module-content">
+                                                        <div class="lqd-counter relative lqd-counter-default -mb-20 text-black w-auto">
+                                                            <div class="lqd-counter-element relative font-medium mb-0" data-enable-counter="true" data-counter-options='{"targetNumber": "21"}'>
+                                                                <span class="block">
+                                                                    21
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ld-fancy-heading relative">
+                                                            <span class="ld-fh-element inline-block relative text-16 leading-20 mb-2em italic text-gray-500 xl:m-0">
+                                                                Années d'<br>expérience
+                                                            </span>
+                                                        </div>
+                                                        <div class="ld-fancy-heading relative mt-10">
+                                                            <p class="ld-fh-element mb-0/5em inline-block relative">
+                                                                Une vocation dédiée à la santé et au bien-être des patients, fortifiée par près de deux décennies d'expérience clinique.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-60percent sm:w-full sm:order-first">
+                                                        <div class="lqd-imggrp-single block relative">
+                                                            <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                                <figure class="w-full relative">
+                                                                    <img width="1038" height="614" src="/assets/img/me.jpeg" alt="">
+                                                                </figure>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item panel">
-                                            <div class="accordion-heading" role="tab" id="heading-lqd-item-2" data-id="lqd-item-2">
-                                                <h4 class="accordion-title text-17" data-bs-controls="lqd-item-2">
-                                                    <a class="border-bottom border-black collapsed pr-30" data-bs-toggle="collapse" data-bs-parent="#accordion-services" href="#lqd-item-2" aria-expanded="false" aria-controls="lqd-item-2">
-                                                        <span>User Experience</span>
-                                                        <span class="accordion-expander absolute right-0 text-16 text-inherit text-black">
-                                                            <i class="lqd-icn-ess icon-ion-ios-add"></i>
-                                                            <i class="lqd-icn-ess icon-ion-ios-remove"></i>
-                                                        </span>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="lqd-item-2" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="heading-lqd-item-2" data-bs-parent="#accordion-services">
-                                                <div class="accordion-content">
-                                                    <div class="ld-fancy-heading">
-                                                        <p class="ld-fh-element mb-0 lqd-highlight-underline lqd-highlight-grow-left text-decoration-default text-16 leading-1/5em">
-                                                            We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly, achieve marketing goals, and look fantastic.
-                                                        </p>
+                                    </div>
+                                    <div class="accordion-item panel">
+                                        <div class="accordion-heading" role="tab" id="heading-item-two">
+                                            <h4 class="accordion-title font-normal">
+                                                <a class="collapsed" role="button"  data-bs-toggle="collapse" href="#collapse-item-two"  aria-expanded="false" aria-controls="collapse-item-two">
+                                                    <span class="accordion-title-txt">
+                                                        Formatrice depuis <b>2018</b>
+                                                    </span>
+                                                    <span class="accordion-expander text-24 w-60 h-60 flex items-center justify-center p-0 border-2 rounded-full  border-lightgray flex-shrink-0">
+                                                        <i class="lqd-icn-ess icon-ion-ios-add"></i>
+                                                        <i class="lqd-icn-ess icon-ion-ios-remove"></i>
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-item-two" class="accordion-collapse collapse" data-bs-parent="#accordion-services" role="tabpanel" aria-labelledby="heading-item-two">
+                                            <div class="accordion-content py-1em">
+                                                <div class="flex flex-wrap items-end">
+                                                    <div class="w-40percent flex flex-wrap align-content-end items-end gap-0 pr-150 sm:w-full module-content">
+                                                        <div class="lqd-counter relative lqd-counter-default -mb-20 text-black w-auto">
+                                                            <div class="lqd-counter-element relative font-medium mb-0" data-enable-counter="true" data-counter-options='{"targetNumber": "6"}'>
+                                                                <span class="block">6</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ld-fancy-heading relative">
+                                                            <span class="ld-fh-element inline-block relative text-16 leading-20 mb-2em italic text-gray-500 xl:m-0">
+                                                                Années d'<br>expérience</span>
+                                                        </div>
+                                                        <div class="ld-fancy-heading relative mt-10">
+                                                            <p class="ld-fh-element mb-0/5em inline-block relative">
+                                                                Partageant la connaissance et cultivant l'excellence chez les professionnels de la santé à travers une pédagogie innovante et engageante.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-60percent sm:w-full sm:order-first">
+                                                        <div class="lqd-imggrp-single block relative">
+                                                            <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                                <figure class="w-full relative">
+                                                                    <img width="1038" height="614" src="/assets/img/me.jpeg" alt="">
+                                                                </figure>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item panel">
-                                            <div class="accordion-heading" role="tab" id="heading-lqd-item-3" data-id="lqd-item-3">
-                                                <h4 class="accordion-title text-17" data-bs-controls="lqd-item-3">
-                                                    <a class="border-bottom border-black collapsed pr-30" data-bs-toggle="collapse" data-bs-parent="#accordion-services" href="#lqd-item-3" aria-expanded="false" aria-controls="lqd-item-3">
-                                                        <span>Ecommerce</span>
-                                                        <span class="accordion-expander absolute right-0 text-16 text-inherit text-black">
-                                                            <i class="lqd-icn-ess icon-ion-ios-add"></i>
-                                                            <i class="lqd-icn-ess icon-ion-ios-remove"></i>
-                                                        </span>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="lqd-item-3" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="heading-lqd-item-3" data-bs-parent="#accordion-services">
-                                                <div class="accordion-content">
-                                                    <div class="ld-fancy-heading">
-                                                        <p class="ld-fh-element mb-0 lqd-highlight-underline lqd-highlight-grow-left text-decoration-default text-16 leading-1/5em">
-                                                            We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly, achieve marketing goals, and look fantastic.
-                                                        </p>
+                                    </div>
+                                    <div class="accordion-item panel">
+                                        <div class="accordion-heading" role="tab" id="heading-item-three">
+                                            <h4 class="accordion-title font-normal">
+                                                <a class="collapsed" role="button" data-bs-toggle="collapse" href="#collapse-item-three" aria-expanded="false" aria-controls="collapse-item-three">
+                                                    <span class="accordion-title-txt">
+                                                        Cadre de santé depuis <b>2020</b>
+                                                    </span>
+                                                    <span class="accordion-expander text-24 w-60 h-60 flex items-center justify-center p-0 border-2 rounded-full  border-lightgray flex-shrink-0">
+                                                        <i class="lqd-icn-ess icon-ion-ios-add"></i>
+                                                        <i class="lqd-icn-ess icon-ion-ios-remove"></i>
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-item-three" class="accordion-collapse collapse" data-bs-parent="#accordion-services" role="tabpanel" aria-labelledby="heading-item-three">
+                                            <div class="accordion-content py-1em">
+                                                <div class="flex flex-wrap items-end">
+                                                    <div class="w-40percent flex flex-wrap align-content-end items-end gap-0 pr-150 sm:w-full module-content">
+                                                        <div class="lqd-counter relative lqd-counter-default -mb-20 text-black w-auto">
+                                                            <div class="lqd-counter-element relative font-medium mb-0" data-enable-counter="true" data-counter-options='{"targetNumber": "4"}'>
+                                                                <span class="block">4</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ld-fancy-heading relative">
+                                                            <span class="ld-fh-element inline-block relative text-16 leading-20 mb-2em italic text-gray-500 xl:m-0">
+                                                                Années d'<br>expérience
+                                                            </span>
+                                                        </div>
+                                                        <div class="ld-fancy-heading relative mt-10">
+                                                            <p class="ld-fh-element mb-0/5em inline-block relative">
+                                                                Dirigeant avec vision et intégrité, j'œuvre à l'amélioration continue des pratiques de soin et au bien-être des équipes soignantes.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-60percent sm:w-full sm:order-first">
+                                                        <div class="lqd-imggrp-single block relative">
+                                                            <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
+                                                                <figure class="w-full relative">
+                                                                    <img width="1038" height="614" src="/assets/img/me.jpeg" alt="">
+                                                                </figure>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -806,27 +1027,6 @@
                         </div>
                     </div>
                 </section>
-                
-                <section class="lqd-section lets-talk py-130 bg-no-repeat bg-cover bg-center" data-section-luminosity="dark" style="background-image: url(/assets/images/demo/asymmetric-agency/our-approach/lets-talk.jpg);">
-                    <div class="container">
-                        <div class="row items-center">
-                            <div class="col col-12 col-md-6 sm:text-center">
-                                <h2 class="ld-fh-element mb-0 text-100 text-white">
-                                    Discutons
-                                </h2>
-                            </div>
-                            <div class="col col-12 col-md-6 text-end sm:text-center">
-                                <a href="#contact-modal" class="btn btn-solid btn-md border-thin btn-has-label bg-white text-20 text-black hover:bg-black hover:text-white" data-lity="#contact-modal">
-                                    <span>
-                                        <span class="btn-txt" data-text='Let’s talk — [ld_strong font-weight="400" opacity="0.5" ]Send a message[/ld_strong]'>
-                                            Discussion — <strong>Envoyer un message</strong>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
         </main>
         
@@ -851,41 +1051,53 @@
                                         <div class="lqd-fancy-menu lqd-custom-menu lqd-menu-td-none">
                                             <ul class="reset-ul">
                                                 <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Company</a>
+                                                    <a class="text-gray-400 hover:text-white" href="/">
+                                                        Accueil
+                                                    </a>
                                                 </li>
                                                 <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Careers</a>
+                                                    <a href="/" class="text-gray-400 hover:text-white">
+                                                        Mon expertise
+                                                    </a>
                                                 </li>
                                                 <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Press media</a>
+                                                    <a  class="text-gray-400 hover:text-white">
+                                                        Mon offre
+                                                    </a>
                                                 </li>
                                                 <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Our Blog</a>
-                                                </li>
-                                                <li class="w-full relative flex items-center flex-wrap">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Privacy Policy</a>
+                                                    <a class="text-gray-400 hover:text-white">
+                                                        Parcours & Accompagnement
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col col-6 col-md-4 mb-35">
-                                        <h3 class="ld-fh-element mb-2/15em text-14 tracking-0/1em text-white"> Products</h3>
+                                        <h3 class="ld-fh-element mb-2/15em text-14 tracking-0/1em text-white">
+                                            Liens utiles
+                                        </h3>
                                         <div class="lqd-fancy-menu lqd-custom-menu lqd-menu-td-none">
                                             <ul class="reset-ul">
                                                 <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Company</a>
+                                                    <a class="text-gray-400 hover:text-white">
+                                                        Mentions légales
+                                                    </a>
                                                 </li>
                                                 <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Careers</a>
+                                                    <a class="text-gray-400 hover:text-white">
+                                                        carrière
+                                                    </a>
                                                 </li>
                                                 <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Press media</a>
-                                                </li>
-                                                <li class="w-full relative flex items-center flex-wrap mb-5">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Our Blog</a>
+                                                    <a class="text-gray-400 hover:text-white">
+                                                        Mon blog
+                                                    </a>
                                                 </li>
                                                 <li class="w-full relative flex items-center flex-wrap">
-                                                    <a class="text-gray-400 hover:text-white" href="#">Privacy Policy</a>
+                                                    <a class="text-gray-400 hover:text-white">
+                                                        Politique de confidentialité
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -895,11 +1107,19 @@
                         </div>
                         <div class="col col-12 col-md-6 col-lg-3">
                             <div class="w-full relative flex flex-col pt-40 border-top border-white-10 mb-35">
-                                <h3 class="ld-fh-element mb-1/75em text-12 uppercase tracking-0/1em text-white-30"> Need help?</h3>
-                                <p class="ld-fh-element mb-0/5em text-18 text-white"> +(1) 123 656 7890</p>
+                                <h3 class="ld-fh-element mb-1/75em text-12 uppercase tracking-0/1em text-white-30">
+                                    Besoin d'aide?
+                                </h3>
+                                <p class="ld-fh-element mb-0/5em text-18 text-white">
+                                    +(33) 06 XX XX XX
+                                </p>
                                 <div class="w-full relative h-25"></div>
-                                <h3 class="ld-fh-element mb-1/75em text-12 uppercase tracking-0/1em text-white-30"> Need support?</h3>
-                                <p class="ld-fh-element mb-0/5em text-18 text-white">help@hub.com</p>
+                                <h3 class="ld-fh-element mb-1/75em text-12 uppercase tracking-0/1em text-white-30">
+                                    Besoin de support?
+                                </h3>
+                                <p class="ld-fh-element mb-0/5em text-18 text-white">
+                                    Hello@netlify.app
+                                </p>
                             </div>
                         </div>
                         <div class="col col-12 col-md-6 col-lg-3">
@@ -965,10 +1185,14 @@
                     <div class="row items-center content-center h-full">
                         <div class="col col-12 col-md-6 mb-30">
                             <div class="ld-fancy-heading">
-                                <h2 class="ld-fh-element text-120 mb-0/5em leading-0/8em text-medium">Send a <span>message.</span></h2>
+                                <h2 class="ld-fh-element text-120 mb-0/5em leading-0/8em text-medium">
+                                    Envoyer <span>message</span>
+                                </h2>
                             </div>
                             <div class="ld-fancy-heading">
-                                <p class="ld-fh-element mb-2/5em">We're here to answer any question you may have.</p>
+                                <p class="ld-fh-element mb-2/5em">
+                                    Remplissez le formulaire ci-après pour entrer en contact avec moi.
+                                </p>
                             </div>
                         </div>
                         <div class="col col-12 col-md-6 -mb-100 module-col">
@@ -977,45 +1201,53 @@
                                     <div class="screen-reader-response">
                                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     </div>
-                                    <form action="/assets/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
+                                    <form onsubmit="return false" class="lqd-cf-form" novalidate="novalidate" data-status="init">
                                         <div class="row">
                                             <div class="col col-md-6 col-12">
-                                                <p class="m-0 text-black-30 text-12">Your name</p>
+                                                <p class="m-0 text-black-30 text-12">
+                                                    Votre nom
+                                                </p>
                                                 <p>
                                                     <span class="lqd-form-control-wrap text">
-                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Full name">
+                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Nom complet">
                                                     </span>
                                                 </p>
                                             </div>
                                             <div class="col col-md-6 col-12">
-                                                <p class="m-0 text-black-30 text-12">Email address</p>
+                                                <p class="m-0 text-black-30 text-12">
+                                                    Adresse email
+                                                </p>
                                                 <p>
                                                     <span class="lqd-form-control-wrap email">
-                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Email Address">
+                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Email">
                                                     </span>
                                                 </p>
                                             </div>
                                             <div class="col col-md-6 col-12">
-                                                <p class="m-0 text-black-30 text-12">(Optional)</p>
+                                                <p class="m-0 text-black-30 text-12">(Facultatif)</p>
                                                 <p>
                                                     <span class="lqd-form-control-wrap tel">
-                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="tel" name="tel" value="" size="40" aria-invalid="false" placeholder="Phone number">
+                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="tel" name="tel" value="" size="40" aria-invalid="false" placeholder="Numéro de téléphone">
                                                     </span>
                                                 </p>
                                             </div>
                                             <div class="col col-md-6 col-12">
-                                                <p class="m-0 text-black-30 text-12">Subject</p>
+                                                <p class="m-0 text-black-30 text-12">
+                                                    Objet
+                                                </p>
                                                 <p>
                                                     <span class="lqd-form-control-wrap text">
-                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="text" name="project-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="New Project">
+                                                        <input class="text-13 text-black border-black-10 font-bold bg-transparent" type="text" name="project-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Nouveau projet">
                                                     </span>
                                                 </p>
                                             </div>
                                             <div class="col col-12">
-                                                <p class="m-0 text-black-30 text-12">Your message</p>
+                                                <p class="m-0 text-black-30 text-12">
+                                                    Votre message
+                                                </p>
                                                 <p>
                                                     <span class="lqd-form-control-wrap textarea">
-                                                        <textarea class="text-13 text-black border-black-10 font-bold bg-transparent" name="message" cols="10" rows="4" aria-required="true" aria-invalid="false" placeholder="Tell us about your project"></textarea>
+                                                        <textarea class="text-13 text-black border-black-10 font-bold bg-transparent" name="message" cols="10" rows="4" aria-required="true" aria-invalid="false" placeholder="Entrez votre message ici!"></textarea>
                                                     </span>
                                                 </p>
                                             </div>
@@ -1025,14 +1257,16 @@
                                                         <span class="lqd-cf-list-item">
                                                             <label>
                                                                 <input type="checkbox" name="acceptance" value="1" aria-invalid="false">
-                                                                <span class="lqd-cf-list-item-label">I am bound by the terms of the Service I accept Privacy Policy</span>
+                                                                <span class="lqd-cf-list-item-label">
+                                                                    J'accepte être contacté ultérieurement
+                                                                </span>
                                                             </label>
                                                         </span>
                                                     </span>
                                                 </span>
                                             </div>
                                             <div class="col col-12">
-                                                <input type="submit" value="Send message" class="lqd-cf-form-control bg-primary text-white text-17 leading-1/5em font-medium">
+                                                <input type="submit" value="Envoyer" class="lqd-cf-form-control bg-primary text-white text-17 leading-1/5em font-medium">
                                             </div>
                                         </div>
                                     </form>
@@ -1042,18 +1276,26 @@
                         </div>
                         <div class="col col-12 col-md-3">
                             <div class="ld-fancy-heading relative">
-                                <h6 class="ld-fh-element text-14 font-bold mb-1/25em tracking-0 inline-block relative">careers</h6>
+                                <h6 class="ld-fh-element text-14 font-bold mb-1/25em tracking-0 inline-block relative">
+                                    Carrière
+                                </h6>
                             </div>
                             <div class="ld-fancy-heading relative">
-                                <p class="ld-fh-element text-16 leading-1/2em mb-0/75em inline-block relative text-black">Would you like to join our growing team?</p>
+                                <p class="ld-fh-element text-16 leading-1/2em mb-0/75em inline-block relative text-black">
+                                    Souhaitez-vous rejoindre l'équipe?
+                                </p>
                             </div>
                             <div class="ld-fancy-heading relative">
-                                <p class="ld-fh-element mb-0/5em inline-block relative font-bold leading-1/2em text-16 text-black">careers@hub.com</p>
+                                <p class="ld-fh-element mb-0/5em inline-block relative font-bold leading-1/2em text-16 text-black">
+                                    Hello@netlify.app
+                                </p>
                             </div>
                         </div>
                         <div class="col col-12 col-md-3">
                             <div class="ld-fancy-heading relative">
-                                <h6 class="ld-fh-element text-14 font-bold mb-1/25em tracking-0 inline-block relative">Feedbacks</h6>
+                                <h6 class="ld-fh-element text-14 font-bold mb-1/25em tracking-0 inline-block relative">
+                                    Feedbacks
+                                </h6>
                             </div>
                             <div class="ld-fancy-heading relative">
                                 <p class="ld-fh-element text-16 leading-1/2em mb-0/75em inline-block relative text-black">Have a project in mind? Send a message.</p>
