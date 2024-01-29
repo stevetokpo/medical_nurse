@@ -403,6 +403,69 @@
 
         <main class="content bg-center-top bg-repeat z-2 bg-white" id="lqd-site-content" style="background-image: url('/assets/images/demo/asymmetric-agency/bg-lines.svg');">
             <div id="lqd-contents-wrap">
+                <section class="lqd-section banner bg-no-repeat bg-cover bg-center transition-all pt-200 pb-230 specialbg" id="banner" data-section-luminosity="dark">
+                    <div class="row-bg-wrap absolute inline-block top-0 right-0 bottom-0 left-0 overflow-hidden">
+                        <div class="row-bg-inner absolute inline-block top-0 right-0 bottom-0 left-0 transition-all">
+                            <figure class="row-bg absolute -top-5 -right-5 -bottom-5 -left-5 bg-no-repeat bg-cover bg-center" style="background-image: url('/assets/img/bg-s.jpg');"></figure>
+                        </div>
+                    </div>
+                    <div class="liquid-row-overlay w-full h-full block absolute top-0 left-0 transition-all bg-black-20" ></div>
+                    <span class="lqd-extra-cursor fixed"></span>
+                    <div class="container-fluid p-0">
+                        <div class="row m-0">
+                            <div class="col col-12 text-center p-0">
+                                <div class="mb-0">
+                                    <h1 class="animatedText" style="font-size: 7vh;"></h1>
+                                </div>
+                            </div>
+                            <script>
+                                const textArray = [
+                                    "Fatiha Milan",
+                                    "Infirmière",
+                                    "Cadre de santé",
+                                    "Formatrice"
+                                ];
+
+                                let typeJsText = document.querySelector(".animatedText");
+                                let stringIndex = 0;
+                                let charIndex = 0;
+                                let isTyping = true;
+
+                                function typeJs() {
+                                    if (stringIndex < textArray.length) {
+                                        const currentString = textArray[stringIndex];
+
+                                        if (isTyping) {
+                                            if (charIndex < currentString.length) {
+                                                typeJsText.innerHTML += currentString.charAt(charIndex);
+                                                charIndex++;
+                                            } else {
+                                                isTyping = false; // Switch to erasing mode
+                                            }
+                                        } else {
+                                        // Erasing animation
+                                        if (charIndex > 0) {
+                                            typeJsText.innerHTML = currentString.substring(0, charIndex - 1);
+                                            charIndex--;
+                                        } else {
+                                            isTyping = true; // Switch back to typing mode
+                                            stringIndex++; // Move to the next string
+
+                                            if (stringIndex >= textArray.length) {
+                                            stringIndex = 0; // Reset to the beginning of the array
+                                            }
+
+                                            charIndex = 0; // Reset character index
+                                            typeJsText.innerHTML = ""; // Clear the content for the new string
+                                        }
+                                        }
+                                    }
+                                }
+                                setInterval(typeJs, 150);
+                            </script>
+                        </div>
+                    </div>
+                </section>
                 
                 <section class="lqd-section about pt-65 pb-50" id="about" data-section-luminosity="light">
                     <div class="container">
