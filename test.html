@@ -414,8 +414,8 @@
                     <div class="container-fluid p-0">
                         <div class="row m-0">
                             <div class="col col-12 text-center p-0">
-                                <div class="mb-0">
-                                    <h1 class="animatedText" style="font-size: 7vh;"></h1>
+                                <div class="lqd-typewriter mb-0">
+                                    <h1 class="animatedText" style="font-size: 7vh;" data-typewriter="true"></h1>
                                 </div>
                             </div>
                             <script>
@@ -1469,9 +1469,15 @@
     <script src="./assets/vendors/fontfaceobserver.js"></script>
     <script src="./assets/vendors/tinycolor-min.js"></script>
     <script src="./assets/vendors/t-js/t.min.js"></script>
-    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/themo.js"></script>
     <script src="./assets/js/liquid-ajax-contact-form.min.js"></script>
-    
+    <script>
+        $(document).ready(function() {
+            const $element = $('[data-typewriter]');
+            $element.liquidTypewriter();
+            $element.t('pause', true);
+        });
+    </script>
     <div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>
     <div class="lqd-cc--el lqd-cc-solid lqd-cc-explore flex items-center justify-center rounded-full fixed pointer-events-none">
         <div class="lqd-cc-solid-bg flex absolute lqd-overlay"></div>
